@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Form Checker</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="form-container">
+            <h2 class="heading-secondary">Create New Account</h2>
+            <form action="" method="POST" autocomplete="off">
+                <div class="input-container">
+                    <label>Username</label>
+                    <input id="username" type="text" placeholder="username">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Some Error Message</small>
+                </div>
+
+                <div class="input-container">
+                    <label>Email</label>
+                    <input id="email" type="email" placeholder="mail@theaman.in" autocomplete="off">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Some Error Message</small>
+                </div>
+
+                <div class="input-container">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Some Error Message</small>
+                    <a class="showpassword" id="showpassword" onclick="showPassword(0)">Show Password</a>
+                </div>
+
+                <div class="input-container">
+                    <label>Password</label>
+                    <input type="password" id="password2" placeholder="repeat password">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Some Error Message</small>
+                    <a class="show-password" id="showpassword2" onclick="showPassword(1)">Show Password</a>
+                </div>
+
+                <div class="input-container">
+                    <input type="button" name="submit" id="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
